@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login & To-Do App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="form-box">
-      <h2 id="form-title">Sign Up</h2>
-      <div class="input-group">
-        <input type="email" placeholder="Email Address" id="email" />
-      </div>
-      <div class="input-group">
-        <input type="password" placeholder="Password" id="password" />
-      </div>
-      <button id="btn1">Sign Up</button>
-      <p id="toggle-text">
-        Already have an account? <a href="#" id="toggle-form">Sign In</a>
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-box">
+    <h2 id="form-title">Sign Up</h2>
+    <div class="input-group">
+      <input type="email" placeholder="Email Address" id="email">
     </div>
-
-    <div class="todo-container hidden">
-      <h2>To-Do List</h2>
-      <div class="todo-input">
-        <input type="text" placeholder="Add a new task" id="inputEl" />
-        <button id="btn">Add</button>
-      </div>
-      <ul id="todo-list"></ul>
+    <div class="input-group">
+      <input type="password" placeholder="Password" id="password">
     </div>
+    <button id="btn1">Sign Up</button>
+    <p id="toggle-text">Already have an account? <a href="#" id="toggle-form">Sign In</a></p>
+  </div>
 
-    <!-- To-Do App -->
-    <div class="todo-container hidden">
-      <h2>To-Do List</h2>
-      <div class="todo-input">
-        <input type="text" placeholder="Add a new task" id="inputEl" />
-        <button id="btn">Add</button>
-      </div>
-      <ul id="todo-list"></ul>
+  <div class="todo-container hidden">
+    <h2>To-Do List</h2>
+    <button id="signout-btn">Sign Out</button>
+    <div class="todo-input">
+      <input type="text" placeholder="Add a new task" id="inputEl">
+      <button id="btn">Add</button>
     </div>
-    <script src="firebase.js"></script>
-    <script src="app.js" type="module"></script>
-  </body>
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
 </html>
